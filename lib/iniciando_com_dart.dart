@@ -4,3 +4,7 @@ int calculateAge(DateTime birthDate) {
 
   return age;
 }
+
+double calculateImc(double weight, double height) {
+  return weight / (height * height);
+}
