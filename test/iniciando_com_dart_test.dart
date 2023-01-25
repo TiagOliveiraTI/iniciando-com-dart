@@ -10,8 +10,18 @@ void main() {
     double weight = 77.6;
     double height = 1.74;
 
-    final imc = weight / (height * height);
-
     expect(calculateImc(weight, height), 25.63086272955476);
+  });
+
+  test('should return if a people can drive', () {
+    int age = calculateAge(DateTime(1988, 01, 31));
+
+    expect(canDriveByAge(age), true);
+  });
+
+    test('should return if a people cannot drive', () {
+    int age = calculateAge(DateTime(2010, 01, 31));
+
+    expect(canDriveByAge(age), false);
   });
 }
