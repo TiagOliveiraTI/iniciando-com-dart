@@ -8,3 +8,9 @@ int calculateAge(DateTime birthDate) {
 double calculateImc(double weight, double height) {
   return weight / (height * height);
 }
+
+bool canDriveByAge(int age) {
+  bool canDrive = age >= 18 ? true : false;
+  
+  return canDrive;
+}
