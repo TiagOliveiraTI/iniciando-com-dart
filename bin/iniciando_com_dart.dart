@@ -1,5 +1,8 @@
 import 'package:iniciando_com_dart/iniciando_com_dart.dart' as iniciando_com_dart;
 
 void main(List<String> arguments) {
-  print('Hello world: ${iniciando_com_dart.calculate()}!');
+
+  int age = iniciando_com_dart.calculateAge(DateTime(1988, 01, 31));
+
+  print(age);
 }
